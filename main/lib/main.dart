@@ -1,5 +1,7 @@
 
 import 'package:flutter/material.dart';
+import 'package:main/my_contrainer.dart';
+import 'package:main/my_scroll.dart';
 
 void main() {
   runApp(const MainApp());
@@ -13,11 +15,7 @@ class MainApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'My Flutter Sample',
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
+      home: MyScroll()
     );
   }
 }
